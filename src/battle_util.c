@@ -3879,6 +3879,14 @@ static bool32 TryChangeBattleTerrain(u32 battler, u32 statusFlag, u8 *timer)
     return FALSE;
 }
 
+static bool32 TryChangeBattleRoom(u32 battler, u32 statusFlag, u8 *timer)
+{
+    if ((!(gFieldStatuses & statusFlag) && (!gBattleStruct->isSkyBattle)))
+    {
+        gFieldStatuses &= ~(STATUS_FIELD_TRICK_ROOM | STATUS_FIELD_MAGIC_ROOM | STATUS_FIELD_WONDER_ROOM);
+        gFieldStatuses |= statusFlag;
+        gDisableStructs[battler].roomAbilityDone = FALSE;
+
         if (GetBattlerHoldEffect(battler, TRUE) == HOLD_EFFECT_TERRAIN_EXTENDER)
             *timer = 5;
         else

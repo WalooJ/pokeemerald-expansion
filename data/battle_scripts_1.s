@@ -9949,6 +9949,7 @@ BattleScript_InversionActivated::
 	call BattleScript_AbilityPopUp
 	printstring STRINGID_INVERSIONACTIVATED
 	waitmessage B_WAIT_TIME_LONG
+	playanimation BS_ABILITY_BATTLER, B_ANIM_TRICK_ROOM
 	end3
 	
 BattleScript_InversionRemoved::
