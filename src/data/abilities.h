@@ -1793,6 +1793,13 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 8,
     },
 
+    [ABILITY_INVERSION] =
+    {
+        .name = _("Inversion"),
+        .description = COMPOUND_STRING("Field becomes bizarre."),
+        .aiRating = 8,
+    },
+
     [ABILITY_GRASSY_SURGE] =
     {
         .name = _("Grassy Surge"),

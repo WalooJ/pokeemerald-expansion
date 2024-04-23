@@ -339,6 +339,14 @@
 
 #define ABILITIES_COUNT_GEN9 311
 
-#define ABILITIES_COUNT ABILITIES_COUNT_GEN9
+// New Abilities
+
+#define ABILITY_ENDARKEN 312 //TUrns normal moves Dark.
+#define ABILITY_KINDLE 313 //Turns normal moves Fire.
+#define ABILITY_INVERSION 314 //Summons Trick Room on entry.
+
+#define ABILITIES_COUNT_CUSTOM 315
+
+#define ABILITIES_COUNT ABILITIES_COUNT_CUSTOM
 
 #endif  // GUARD_CONSTANTS_ABILITIES_H

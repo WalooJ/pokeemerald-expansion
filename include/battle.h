@@ -129,6 +129,7 @@ struct DisableStruct
     u8 steelSurgeDone:1;
     u8 weatherAbilityDone:1;
     u8 terrainAbilityDone:1;
+    u8 roomAbilityDone:1;
     u8 usedProteanLibero:1;
 };
 
